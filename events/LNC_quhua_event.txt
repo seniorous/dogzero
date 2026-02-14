@@ -1,0 +1,13 @@
+add_namespace = LNC_quhua_event
+country_event = {
+    id = LNC_quhua_event.1
+    title = LNC_quhua_event.1.t
+    desc = LNC_quhua_event.1.desc
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = LNC_quhua_event.1.a
+        lnc_Yamato_cultural_heritage = yes
+    }
+}

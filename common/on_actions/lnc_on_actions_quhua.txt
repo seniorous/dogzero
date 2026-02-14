@@ -1,0 +1,55 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			if = {
+				limit = { has_country_flag = got_Liewartine_flag }
+                set_variable = { JAP_stability = JAP.stability }
+                set_variable = { JAP_factories = JAP.num_of_factories }
+                set_variable = { JAP_surrender_progress = JAP.surrender_progress }
+                set_variable = { JAP_days_since_capitulated = JAP.days_since_capitulated }
+                #变量运算
+
+                subtract_from_variable = { JAP_surrender_progress = 1 }
+                multiply_variable = { JAP_surrender_progress = -1 }
+                
+                multiply_variable = { JAP.stability = JAP_surrender_progress }
+                multiply_variable = { JAP_factories = JAP_surrender_progress }
+
+                subtract_from_variable = { JAP_stability = 0.31 }
+                subtract_from_variable = { JAP_factories = 0.30 }
+
+                divide_variable = { JAP_stability = 6.9 }
+
+                divide_variable = { JAP_factories = 5000 }
+                #精神切换判定
+                if = {
+                    limit = { has_idea = idae_LNC_no_JAP }
+                    if = {
+                        limit = {
+                            AND = {
+                                JAP = { exists = yes }
+                                check_variable = { JAP.days_since_capitulated > 365 }
+                            }
+                        }
+                        remove_ideas = idae_LNC_no_JAP 
+                        add_dynamic_modifier = { modifier = LNC_Yamato_cultural_heritage_dynamic_modifier }
+                    }
+                }
+
+                if = {
+                    limit = { has_dynamic_modifier = LNC_Yamato_cultural_heritage_dynamic_modifier }
+                    if = {
+                        limit = { 
+                            OR = {
+                                JAP = { exists = no }
+                                check_variable = { JAP.days_since_capitulated < 365 }
+                            }
+                        }
+                        add_ideas = idae_LNC_no_JAP 
+                        remove_dynamic_modifier = { modifier = LNC_Yamato_cultural_heritage_dynamic_modifier }
+                    }
+                }
+			}
+		}
+	}
+}

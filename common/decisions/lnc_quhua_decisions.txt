@@ -23,9 +23,9 @@ lnc_quhua_decisions = {
 		fire_only_once = no
 
 		custom_cost_trigger = {
-			has_army_experience > 74
+			has_army_experience > 499
 		}
-		custom_cost_text = decision_cost_ArmXP_75
+		custom_cost_text = decision_cost_ArmXP_50
 
 		days_remove = 30
 
@@ -39,7 +39,7 @@ lnc_quhua_decisions = {
 		
 		complete_effect = {
 			hidden_effect = {
-				army_experience = -75	
+				army_experience = -50	
 			}
 			
 		}
@@ -49,6 +49,118 @@ lnc_quhua_decisions = {
 				research_military_the_New_Three_Kingdoms=yes	
 			}
 		}
-	}     
+	}
+	decison_Yamato_cultural_heritage = {
+
+		allowed = {		
+		}
+
+		available = {
+			has_country_flag = got_Liewartine_flag
+		}
+
+		visible = {
+			has_country_flag = got_Liewartine_flag
+		}
+
+		fire_only_once = yes
+
+		days_remove = 7
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			country_event = LNC_quhua_event.1
+		}
+	}
+	decison_start_firedargon_grand_training = {
+
+		allowed = {		
+		}
+
+		available = {
+			AND = {
+				has_country_flag = got_firedargon_flag
+				NOT={has_idea = idea_firedargon_grand_training}
+			}
+			
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = got_firedargon_flag
+				NOT={has_idea = idea_firedargon_grand_training}
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 0
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			add_ideas = idea_firedargon_grand_training
+		}
+	}
+	decison_stop_firedargon_grand_training = {
+
+		allowed = {		
+		}
+
+		available = {
+			AND = {
+				has_country_flag = got_firedargon_flag
+				has_idea = idea_firedargon_grand_training
+			}
+		}
+
+		visible = {
+			AND = {
+				has_country_flag = got_firedargon_flag
+				has_idea = idea_firedargon_grand_training
+			}
+		}
+
+		fire_only_once = no
+
+		days_remove = 0
+
+		modifier = {
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+		
+		complete_effect = {
+			
+		}
+
+		remove_effect = {
+			remove_ideas = idea_firedargon_grand_training
+		}
+	}             
 
 }

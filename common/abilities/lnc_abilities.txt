@@ -6,7 +6,7 @@ ability={
 		#icon = 
 		allowed = {
 			is_border_war = no
-			is_character = LNC_Liewartine
+			has_trait = trait_Gekokujou
 		}
 		
 		unit_modifiers = {
@@ -28,7 +28,7 @@ ability={
 		#icon = 
 		allowed = {
 			is_border_war = no	
-			is_character = LNC_Liewartine
+			has_trait = trait_Gekokujou
 		}
 		
 		unit_modifiers = { 
@@ -36,7 +36,7 @@ ability={
 		
 		one_time_effect = {
 			add_stability=0.01
-			add_manpower = -50000
+			add_manpower = -10000
 			add_timed_idea = {
     			idea = Suicide_idea
 				days = 7

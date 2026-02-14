@@ -16,7 +16,7 @@ lnc_common_decisions = {
 		fire_only_once = yes
 
 		cost = 69
-		days_remove = 1
+		days_remove = 30
 
 		modifier = {
 			
@@ -27,14 +27,14 @@ lnc_common_decisions = {
 		}
 		
 		complete_effect = {
+
+		}
+
+		remove_effect = {
 			lnc_create_leader_lnc = yes
 			set_country_flag = got_lnc_flag
 			add_political_power = 91
 			add_stability = 0.01
-		}
-
-		remove_effect = {
-			
 		}
 	}
 
@@ -55,7 +55,7 @@ lnc_common_decisions = {
 		fire_only_once = yes
 
 		cost = 69
-		days_remove = 1
+		days_remove = 30
 
 		modifier = {
 			
@@ -66,14 +66,14 @@ lnc_common_decisions = {
 		}
 		
 		complete_effect = {
+
+		}
+
+		remove_effect = {
 			lnc_create_leader_firedargon = yes
 			set_country_flag = got_firedargon_flag
 			add_political_power = 91
 			add_stability = 0.01
-		}
-
-		remove_effect = {
-			
 		}
 	}
 
@@ -94,7 +94,7 @@ lnc_common_decisions = {
 		fire_only_once = yes
 
 		cost = 69
-		days_remove = 1
+		days_remove = 30
 
 		modifier = {
 			
@@ -105,14 +105,14 @@ lnc_common_decisions = {
 		}
 		
 		complete_effect = {
+
+		}
+
+		remove_effect = {
 			lnc_create_leader_Liewartine = yes
 			set_country_flag = got_Liewartine_flag
 			add_political_power = 91
 			add_stability = 0.01
-		}
-
-		remove_effect = {
-			
 		}
 	}
 
@@ -133,7 +133,7 @@ lnc_common_decisions = {
 		fire_only_once = yes
 
 		cost = 69
-		days_remove = 1
+		days_remove = 30
 
 		modifier = {
 			
@@ -144,14 +144,14 @@ lnc_common_decisions = {
 		}
 		
 		complete_effect = {
+
+		}
+
+		remove_effect = {
 			lnc_create_leader_OO = yes
 			set_country_flag = got_OO_flag
 			add_political_power = 91
 			add_stability = 0.01
-		}
-
-		remove_effect = {
-			
 		}
 	}
 
@@ -172,7 +172,7 @@ lnc_common_decisions = {
 		fire_only_once = yes
 
 		cost = 69
-		days_remove = 1
+		days_remove = 30
 
 		modifier = {
 			
@@ -183,14 +183,37 @@ lnc_common_decisions = {
 		}
 		
 		complete_effect = {
+
+		}
+
+		remove_effect = {
 			lnc_create_leader_shaoyou = yes
 			set_country_flag = got_shaoyou_flag
 			add_political_power = 91
 			add_stability = 0.01
-		}
-
-		remove_effect = {
-			
+			hidden_effect = {
+				#好感度 受欢迎程度 疲劳度  淫乱度
+				set_variable = {
+					var = shaoyou_affection_level
+					value = 0
+					tooltip = haoyou_affection_level_tt
+				}
+				set_variable = {
+					var = shaoyou_popularity_level
+					value = 0
+					tooltip = shaoyou_popularity_level_tt
+				}
+				set_variable = {
+					var = shaoyou_fatigue_level
+					value = 0
+					tooltip = shaoyou_fatigue_level_tt
+				}
+				set_variable = {
+					var = shaoyou_promiscuity_level
+					value = 0
+					tooltip = shaoyou_promiscuity_level_tt
+				}	
+			}
 		}
 	}              
 

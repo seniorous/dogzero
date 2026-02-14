@@ -1,12 +1,7 @@
 ﻿l_simp_chinese:
- lnc_common_decisions:"OTL穿越者"
- hire_lnc:"招募lnc" 
  got_lnc_flag:"已招募lnc"
- hire_firedargon:"招募燚龘"
  got_firedargon_flag:"已招募燚龘"
- hire_Liewartine:"招募Liewartine"
  got_Liewartine_flag:"已招募Liewartine"
- hire_OO:"招募海洋"
  got_OO_flag:"已招募OO"
 
  exiting_airforce_country_leader_trait:"存在空军" 
@@ -32,13 +27,5 @@
  OO:0 "海洋"
  OO_desc:0 "本名为海洋，人称OO，学习能力较强"
 
- lnc_quhua_decisions:"群友的聊天"
- decison_research_military_the_New_Three_Kingdoms:"研究新三国军事理论"
- idea_victor_arrogant:"胜兵必骄"
- idea_arrogant_defeat:"骄兵必败"
- idea_defeat_mourn:"败兵必哀"
- idea_mourn_victor:"哀兵必胜"
- decison_research_military_the_New_Three_Kingdoms_desc:"新三国军事理论是一种非常有效的军事策略，但是需要大量的时间和资源。"
- decision_cost_ArmXP_75:"£army_experience §Y75§!"
- decision_cost_ArmXP_75_blocked:"£army_experience §R75§!"
- decision_cost_ArmXP_75_tooltip:"执行此决议需要£army_experience  §Y75§!
+
+
