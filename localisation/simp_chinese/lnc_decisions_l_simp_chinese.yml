@@ -1,0 +1,31 @@
+﻿l_simp_chinese:
+ lnc_common_decisions:"异界来客"
+
+
+ hire_lnc:"招募lnc" 
+ hire_firedargon:"招募燚龘"
+ hire_Liewartine:"招募Liewartine"
+ hire_OO:"招募海洋"
+
+ lnc_quhua_decisions:"群友的聊天"
+
+
+ decison_Yamato_cultural_heritage:"学习大和民族的文化底蕴"
+ decison_Yamato_cultural_heritage_desc:"§L我是日本入——牢头如是说§!"
+
+ decison_start_firedargon_grand_training:"开始火龙大练兵"
+ decison_start_firedargon_grand_training_desc:"§L纽伦堡，开庭——火龙如是说§!"
+
+ decison_stop_firedargon_grand_training:"结束火龙大练兵"
+ decison_stop_firedargon_grand_training_desc:"§L纽伦堡，休庭§!"
+
+
+ decison_research_military_the_New_Three_Kingdoms:"研究新三国军事理论"
+ idea_victor_arrogant:"胜兵必骄"
+ idea_arrogant_defeat:"骄兵必败"
+ idea_defeat_mourn:"败兵必哀"
+ idea_mourn_victor:"哀兵必胜"
+ decison_research_military_the_New_Three_Kingdoms_desc:"§L“胜兵必骄，骄兵必败，败兵必哀，哀兵必胜”是新三国军事理论的基本内容。研究新三国军事理论就像一个轮回，需要消耗大量的时间资源§!"
+ decision_cost_ArmXP_50:"£army_experience §Y50§!"
+ decision_cost_ArmXP_50_blocked:"£army_experience §R50§!"
+ decision_cost_ArmXP_50_tooltip:"执行此决议需要£army_experience  §Y50§!

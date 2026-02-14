@@ -29,12 +29,12 @@ lnc_shaoyou_decisions = {
 		}
 		
 		complete_effect = {
-			country_event = LNC_shaoyou_event.1
+			
 
 		}
 
 		remove_effect = {
-			
+			country_event = LNC_shaoyou_event.1
 		}
 	}     
 

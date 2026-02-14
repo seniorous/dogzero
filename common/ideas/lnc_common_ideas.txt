@@ -59,8 +59,30 @@ ideas = {
                 compliance_gain=-0.01
                 
             }
-
         }
+        idae_LNC_no_JAP = {
+            modifier = {
+                war_support_factor=-0.20
+                stability_factor=-0.20
+            }
+        }
+        idea_firedargon_grand_training = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no
+			}			
+			
+			modifier = {
+				experience_gain_army_unit = 25
+				experience_gain_navy_unit = 25
+				air_training_xp_gain_factor = 2
+				air_mission_xp_gain_factor = 2
+			}
+			
+		}
+
 
     }
 }

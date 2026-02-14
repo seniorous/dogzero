@@ -1,0 +1,65 @@
+research_military_the_New_Three_Kingdoms = {
+    if = {
+		limit = { has_idea = idea_victor_arrogant }
+		swap_ideas = {
+			remove_idea = idea_victor_arrogant
+			add_idea = idea_arrogant_defeat
+		}
+	}
+	else_if = {
+		limit = { has_idea = idea_arrogant_defeat }
+		swap_ideas = {
+			remove_idea = idea_arrogant_defeat
+			add_idea = idea_defeat_mourn
+		}
+	}
+    else_if = {
+		limit = { has_idea = idea_defeat_mourn }
+		swap_ideas = {
+			remove_idea = idea_defeat_mourn
+			add_idea = idea_mourn_victor
+		}
+	}
+    else_if = {
+		limit = { has_idea = idea_mourn_victor }
+		swap_ideas = {
+			remove_idea = idea_mourn_victor
+			add_idea = idea_victor_arrogant
+		}
+	}
+    else = {
+		set_variable_to_random = {
+			var = random_num
+			max = 3
+			integer = yes
+		}
+		if = {
+			limit = { check_variable = { random_num = 0 } }
+			add_ideas = idea_victor_arrogant
+		}
+        else_if = {
+			limit = { check_variable = { random_num = 1 } }
+			add_ideas = idea_arrogant_defeat
+		}
+		else_if = {
+			limit = { check_variable = { random_num = 2 } }
+			add_ideas = idea_defeat_mourn
+		}
+		else = {
+			add_ideas = idea_mourn_victor
+		}
+		clear_variable = random_num
+    }
+}
+
+lnc_Yamato_cultural_heritage = {
+	if = {
+        limit = { 
+            JAP = { exists = no }
+        }
+            add_ideas = idae_LNC_no_JAP
+    }
+	else = {
+		add_dynamic_modifier = { modifier = LNC_Yamato_cultural_heritage_dynamic_modifier }
+	}
+}

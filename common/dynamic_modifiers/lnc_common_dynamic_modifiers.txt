@@ -1,10 +1,12 @@
-Not_step_back_dynamic_modifier= {
-    icon = 
+LNC_Yamato_cultural_heritage_dynamic_modifier= {
+    icon = {GFX_idea_NOR_luftforsvaret_ns}
     enable = { always = yes }
-    remove_trigger = {
-        has_war = no
-    }
-    political_power_gain = var_name # Variable value
-    weekly_manpower = 1000 # Constant value
-    stability_factor = GER.stability_var # Checks specifically GER's variable, regardless of where the modifier is applied
+    remove_trigger = { always = no }
+
+    compliance_growth = JAP_stability
+    consumer_goods_factor = 0.05
+    local_resources_factor = JAP_factories
+    production_speed_industrial_complex_factor = JAP_factories
+    production_speed_infrastructure_factor = JAP_factories
+
 }
